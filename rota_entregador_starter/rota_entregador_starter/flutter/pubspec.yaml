@@ -1,16 +1,35 @@
 name: rotas_app
-description: MVP de rotas para entregadores
-publish_to: none
+description: MVP de rotas para entregadores.
+publish_to: 'none' # Impede a publicação acidental no pub.dev
+
 version: 1.0.0+1
+
 environment:
   sdk: '>=3.4.0 <4.0.0'
+
 dependencies:
   flutter:
     sdk: flutter
+
+  # Pacote para requisições HTTP e integração com APIs
   dio: ^5.7.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  # Regras de boas práticas e padronização do código
   flutter_lints: ^5.0.0
+
 flutter:
   uses-material-design: true
+
+  # Caso precise de ativos (imagens, ícones, ficheiros JSON) no futuro:
+  assets:
+      - assets/images/
+
+  # Caso precise de fontes personalizadas no futuro:
+  # fonts:
+  #   - family: MinhaFonte
+  #     fonts:
+  #       - asset: assets/fonts/MinhaFonte-Regular.ttf
