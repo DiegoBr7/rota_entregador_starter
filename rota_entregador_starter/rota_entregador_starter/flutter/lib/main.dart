@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:rotas_app/features/onboarding/onboarding_page.dart';
 import 'screens/home_screen.dart';
 
-void main() => runApp(const RotasApp());
+import 'app.dart';
 
-class RotasApp extends StatelessWidget {
-  const RotasApp({super.key});
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
 
-  @override
-  Widget build(BuildContext context) => MaterialApp(
-      title: 'Minhas Rotas',
-      theme: ThemeData(colorSchemeSeed: Colors.blue, useMaterial3: true),
-      home: const HomeScreen());
+  runApp(const MeuApp());
 }
+
+
